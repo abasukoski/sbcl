@@ -9,7 +9,7 @@
 # Passwordless login to the target machine is required.
 
 #config_options="--without-gencgc --with-cheneygc"
-if [ $1 = -p ]
+if [ "$1" = -p ]
 then
   ssh_port_opt="-p $2"
   scp_port_opt="-P $2"
